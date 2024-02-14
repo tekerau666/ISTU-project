@@ -19,6 +19,14 @@ body {
     padding-right: 20px;
 }
 
+.title {
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -92,7 +100,77 @@ body {
     height: 61px;
     left: 727px;
     top: 900px;
-    background: #116508;
+    background-color: #116508;
     opacity: 0.5;
     z-index: -1;
+}
+
+.assortment {
+    margin-bottom: 150px;
+}
+
+.assortment__list {
+    text-align: center;
+    gap: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assortment__image {
+    width: 208px;
+    height: 208px;
+}
+
+.assortment__name {
+    font-family: 'Cormorant', serif;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.reviews {
+    background-color: rgba(17, 101, 8, 40%);
+    padding: 60px 0;
+}
+
+.reviews__list {
+    display: flex;
+    gap: 0 26px;
+}
+
+.reviews__item {
+    flex-basis: 280px;
+}
+
+.reviews__text {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.reviews__author {
+    font-weight: 600;
+}
+
+.blog {
+    padding: 150px 0;
+}
+
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 58px;
+}
+
+.blog__item {
+
+}
+
+.blog__item-content {
+    margin: 0 10px 0 20px;
+}
+
+.blog__item-image {
+    width: 270px;
+    height: 180px;
 }
