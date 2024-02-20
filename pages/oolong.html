@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;1,300&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=../css/reset.css>
+    <style>
+
+        .fullscreen-image {
+            height: 100vh;
+            background: url('../img/oolong_background.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            font-size: 2em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .fullscreen-image div {
+            animation: slideInFromTop 1s ease-out;
+        }
+
+        .fullscreen-image h1 {
+            margin: 0;
+        }
+        .scroll-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+
+        .scroll-item {
+            text-align: left;
+            cursor: pointer;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .scroll-item img {
+            height: 310px;
+            width: 310px;
+            margin-right: 10px;
+        }
+
+        .scroll-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div class="fullscreen-image">
+    <div>
+        <h1>Улуны</h1>
+        <h1>乌龙茶</h1>
+    </div>
+</div>
+
+<ul class="scroll-container">
+    <li class="scroll-item">
+        <img src="../img/oolong_1.jpg" alt="">
+        <p>сильноферментированные улуны</p>
+    </li>
+    <li class="scroll-item">
+        <img src="../img/oolong_2.jpg" alt="">
+        <p>среднеферментированные улуны</p>
+    </li>
+    <li class="scroll-item">
+        <img src="../img/oolong_3.jpg" alt="">
+        <p>слабоферментированные улуны</p>
+    </li>
+</ul>
+</body>
+</html>
